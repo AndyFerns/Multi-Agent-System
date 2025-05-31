@@ -1,0 +1,5 @@
+openai>=1.0.0
+PyMuPDF
+transformers
+torch
+python-dotenv
