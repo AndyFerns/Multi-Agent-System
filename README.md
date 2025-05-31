@@ -76,16 +76,18 @@ Multi Agent System/
 
 Example of routing and extraction logged to console:
 
+
+```bash
 2025-05-31 12:00:00 [INFO] [ROUTE] Email routed for intent 'RFQ' with extracted: {'sender': 'alice@example.com', 'urgency': 'High', 'intent': 'RFQ'}, missing: [], thread: thread-1a2b3c4d
 
 2025-05-31 12:00:01 [INFO] [ROUTE] JSON routed for intent 'RFQ' with extracted: {'invoice_number': 'INV-12345', 'date': '2025-05-01', 'amount': 4500.0}, missing: [], thread: thread-5e6f7g8h
 
 2025-05-31 12:00:02 [INFO] [ROUTE] PDF routed for intent 'General' with extracted: {'content': 'Extracted PDF text content...'}, missing: [], thread: thread-9i0j1k2l
 
+```
+
 You can also print shared memory logs grouped by thread with:
 
 ```bash
 python main.py --print-memory
-
-
 ```
