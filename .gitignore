@@ -13,6 +13,9 @@ __pycache__/
 # Shared SQLite memory module
 memory.db
 
+# MP4 Recordings
+*.mp4
+
 # Distribution / packaging
 .Python
 build/
