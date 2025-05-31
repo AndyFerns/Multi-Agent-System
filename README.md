@@ -4,17 +4,13 @@ A modular multi-agent AI system that accepts input files (PDF, JSON, Email), cla
 
 ---
 
-## 🎥 Working Video Demo
-
-A short demo video showing the system flow:
+## 🎥 Procedure
 
 - Input a sample file (email, JSON, or PDF)  
 - Classifier Agent detects format and intent  
 - Routes to the appropriate agent (JSON Agent, Email Agent, PDF Agent)  
 - Extracted information and intent logged in shared memory  
 - Display logs grouped by conversation thread  
-
-**[Link your demo video here or embed GIF/YouTube video]**
 
 ---
 
