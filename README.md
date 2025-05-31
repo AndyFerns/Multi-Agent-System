@@ -32,6 +32,7 @@ These files simulate typical user inputs to test classification and extraction.
 
 ## 📁 Folder Structure
 
+```text
 Multi Agent System/
 ├── main.py
 ├── README.md
@@ -63,6 +64,8 @@ Multi Agent System/
 │   ├── file_loader.py
 │   ├── llm.py
 │   ├── logger.py
+
+```
 
 - **agents/** — Modules for different agents handling specific input types  
 - **samples/** — Sample input files to test the system  
