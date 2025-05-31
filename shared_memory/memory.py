@@ -37,3 +37,9 @@ def log_memory(conn, source, fmt, intent, extracted, thread_id):
     ))
     conn.commit()
 
+def print_memory_log(db):
+    cursor = db.cursor()
+    cursor.execute("SELECT * FROM memory")
+    rows = cursor.fetchall()
+    for row in rows:
+        print(row)
