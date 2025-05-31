@@ -1,0 +1,9 @@
+From: bob@example.com
+Subject: Damaged Delivery
+
+Hello,
+
+I received the shipment yesterday, but several items were broken. Please advise how to proceed.
+
+Regards,
+Bob

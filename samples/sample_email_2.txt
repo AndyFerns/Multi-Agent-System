@@ -1,0 +1,272 @@
+Delivered-To: write2andrew.fernandes@gmail.com
+Received: by 2002:a2e:9dd8:0:b0:329:22ea:da4 with SMTP id x24csp802454ljj;
+        Fri, 30 May 2025 07:07:34 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IH6bZ4Amgf3X4DeKAkPCYAyOQJ7NVW1XrUhvPnTREjd8XGd6pumyu4ou/JvHtKiUIQVxMSy
+X-Received: by 2002:a05:6a00:8c5:b0:736:4d05:2e35 with SMTP id d2e1a72fcca58-747bdcef603mr4772517b3a.3.1748614053722;
+        Fri, 30 May 2025 07:07:33 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1748614053; cv=none;
+        d=google.com; s=arc-20240605;
+        b=ORXtmmfjyiBSabvDMZYXBD2pfWuCZK/+XSkXNGSHI/bsDvjSLh0Xz07fWU4RCvbL5S
+         90yA4+l6pNYWP3rjtYx8kxwTEWNPg0YKmsbSQIM3nD6MJD85g4WG4FqxmoBAPsxOkYBZ
+         43vxuY2ruErt6iCFNwgpCQYbpfkFKMCLe6SxuhBfEFpRzMiEi+Cwo0mybT99l7xb2JIg
+         Se2ZIMQSINWBi+Yx0Djsne6UP8ZbH21L3n3ObTSoZOTu8cOQiSSLkBZXWk145BUJf3Jp
+         Ona7QlcRPGyugka+yoG/NsO/8g3pGf7YBBEJnroXDeTVCGOlwoqNE5TnRYRVAfh0hPXM
+         Wi2Q==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=to:list-unsubscribe-post:list-unsubscribe:feedback-id:reply-to
+         :subject:message-id:mime-version:from:date:content-transfer-encoding
+         :dkim-signature:dkim-signature;
+        bh=j4e5FnbdYB/4LNYUIjo/NE7P2LFXt+nd1nzxyTLnkes=;
+        fh=C2Vyw1KP4QcmFZcky85oZ18GlVD8n4Z+AsrEWTcEQ0E=;
+        b=MwzVOsYdO4mTOmDZ9rVutD19rG2rz8zuOV+3cPcPYy0QgoRRdI4gpGLghnWF/3LC1X
+         AO2EL1nmKeWY1oYPZ9d95IRhCSeUOHTDerLTL3Def/1d8SGa9sx+Y6tIsEmFI2Vzfny2
+         c4fIQA4Uo/h5cwmCGISrHSuYrpMsXDAf0J4zaodCUd4RhGGhGEW/ubIVrRHSq/9JW4Qt
+         sAXyQEyG3+NzDDW+bChek9yVUKlCLlw9Or7410dViCBb4MXgk8B5w6B5ueKoo34bPlmw
+         kXRZHpBH/6evGwyuVIqpZHZ0gVo4y+zbTVwxVI2YShl3JVC6Pd5zHAsdUgzaPDHj/ZL3
+         13cQ==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@updates.internshala.com header.s=msg header.b=58qIavHZ;
+       dkim=pass header.i=@sendgrid.info header.s=smtpapi header.b=eEC+hB99;
+       spf=pass (google.com: domain of bounces+49946244-3e4d-write2andrew.fernandes=gmail.com@msg.updates.internshala.com designates 159.183.106.129 as permitted sender) smtp.mailfrom="bounces+49946244-3e4d-write2andrew.fernandes=gmail.com@msg.updates.internshala.com";
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=internshala.com
+Return-Path: <bounces+49946244-3e4d-write2andrew.fernandes=gmail.com@msg.updates.internshala.com>
+Received: from o2649.pnw.mail.internshala.com (o2649.pnw.mail.internshala.com. [159.183.106.129])
+        by mx.google.com with ESMTPS id d2e1a72fcca58-747afebce21si5216754b3a.267.2025.05.30.07.07.33
+        for <write2andrew.fernandes@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Fri, 30 May 2025 07:07:33 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounces+49946244-3e4d-write2andrew.fernandes=gmail.com@msg.updates.internshala.com designates 159.183.106.129 as permitted sender) client-ip=159.183.106.129;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@updates.internshala.com header.s=msg header.b=58qIavHZ;
+       dkim=pass header.i=@sendgrid.info header.s=smtpapi header.b=eEC+hB99;
+       spf=pass (google.com: domain of bounces+49946244-3e4d-write2andrew.fernandes=gmail.com@msg.updates.internshala.com designates 159.183.106.129 as permitted sender) smtp.mailfrom="bounces+49946244-3e4d-write2andrew.fernandes=gmail.com@msg.updates.internshala.com";
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=internshala.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=updates.internshala.com; h=content-transfer-encoding:content-type:from:mime-version:subject: reply-to:feedback-id:list-unsubscribe:list-unsubscribe-post:to:cc:content-type: feedback-id:from:subject:to; s=msg; bh=j4e5FnbdYB/4LNYUIjo/NE7P2LFXt+nd1nzxyTLnkes=; b=58qIavHZrKVyRMvRM75hl4mvYGIaYRoXdMn288vRSEAyZe7EceRVQXnz5tTAGYNm2lOJ 9EaRpSdYKV6L7kdIHuXyMZsmULpz45oOvJJ10PvUViTtp12GUaLDgiKJdUIFnBMw+1I2lY NTkd9keZltPCdlZm2RvKykMoBGGwGVlYWcToJQV81SpiPtCMHU2KG8UwQnt6SdW90DH4/+ qoJLPYolP+4emWF9OLx05F3w5Wmle5Ycf1BsTNxrwTvHuFR5zjUuNhX1fZxMoXMn4L6baO H6CAQtqbWfOErPWmE2kyykO4euMFkerevjfBKlIyueDKnjqCce96zmuJxs3Ac9ng==
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=sendgrid.info; h=content-transfer-encoding:content-type:from:mime-version:subject: reply-to:feedback-id:list-unsubscribe:list-unsubscribe-post:to:cc:content-type: feedback-id:from:subject:to; s=smtpapi; bh=j4e5FnbdYB/4LNYUIjo/NE7P2LFXt+nd1nzxyTLnkes=; b=eEC+hB99SzL+J774q4gAvNfEyF1X9AlCUrKAATnWNzKNC8+AjqypzifAIaUBJ9eiqIrV BqJe8dxQy5ZJx2cZV3u0Rup0jDTymGlRpyPCVi53XbGhQqIv1OJpgXI7SEASMp+V5TN+EL d6brklRgdIgXKsiRga5JS5/XVy+dEFSg4=
+Received: by recvd-7698ccbc7-wqbjg with SMTP id recvd-7698ccbc7-wqbjg-1-6839B88B-1E 2025-05-30 13:54:19.636281601 +0000 UTC m=+67417.103725429
+Received: from NDk5NDYyNDQ (unknown) by geopod-ismtpd-6 (SG) with HTTP id -pBFXuonQkqN2qwJHHGdFQ Fri, 30 May 2025 13:54:19.567 +0000 (UTC)
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=us-ascii
+Date: Fri, 30 May 2025 14:07:32 +0000 (UTC)
+From: Internshala Trainings <trainings@updates.internshala.com>
+Mime-Version: 1.0
+Message-ID: <-pBFXuonQkqN2qwJHHGdFQ@geopod-ismtpd-6>
+Subject: Update: Your checkout window is closing
+Reply-To: jos@updates.internshala.com
+Feedback-ID: Ma6oFMnQxLB0hkaO_0p_4gmbVxhGeJGigypQO3iFTYljtkA3K0il6T4oahADS.n4tGMYbA:ymzpP1G.M4TTvc1PR_.Ui0BWJ4Xy5fRqs5KdL6XUKRExASFxbkIfqmhrpPtgMjOTW73DGg:DC03:Moe
+List-Unsubscribe: <https://link.internshala.com/v1/emailunsubscribe?qmoe=FKn_3uTR2srT0wcL60Q0lwwcQPn2Nu3aaVj6jEZS1bPmk1QXjCBM9HbPB2fvhpnNwPsm2WZW2A-OEzn_rCyJ9_CTrIUzO7N4MBY1W5v2.xXU1YD3m7JgT54AYd1f.jhY8QXHrot1g7SOtGMa2oneg-P0LfngVqXsm5EzwXGH_QUk9lxsYByipMRjLcBUMFN1yIEgQOj2BhTawjeGbdkwZn4Pp6KjlEFEvrlw5w5feiGQAd4BVpV06WBM1M5FP_0NV5tTscwmOVGutKZ3Z1Tz0G1bPENCqTFMCmAnM-aO.gmmHPp2J2gTkEndq7auThn7GR0_XPJcqu8E0MehUwpJsNbqSjDKV2YlaNVk1fObs0MYRWsjL8XVhQTS4H-UtYFJMAC_n0P6.T9fo.NAmX7WPBtOcFj7dxi._w6qTbK>, <mailto:unsubscribe-DC03@moengage.co?subject=Unsubscribe | FKn_3uTR2srT0wcL60Q0lwwcQPn2Nu3aaVj6jEZS1bPmk1QXjCBM9HbPB2fvhpnNwPsm2WZW2A-OEzn_rCyJ9_CTrIUzO7N4MBY1W5v2.xXU1YD3m7JgT54AYd1f.jhY8QXHrot1g7SOtGMa2oneg-P0LfngVqXsm5EzwXGH_QUk9lxsYByipMRjLcBUMFN1yIEgQOj2BhTawjeGbdkwZn4Pp6KjlEFEvrlw5w5feiGQAd4BVpV06WBM1M5FP_0NV5tTscwmOVGutKZ3Z1Tz0G1bPENCqTFMCmAnM&body=Hi! I am requesting to be removed from all future marketing emails from your company.>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+x-campaignid: 6839a094cc801714069b9ab7
+X-SG-EID: u001.3DQCpPzQ7xI1J5aX+HtjcVY+YeY+8xGqUEfjvlGd0Is7cb2aTqCSexMUZQBRfPq2hFeTU8P6/Gwnhehkl7bjZwpcUfhmyB9nWhQ+HDBN5nSuLueBHK7aXT/zqNB078PEedt6rrJ4dcr39wwfpo+fJQwyj5Am2bjJScRIh3bb2Un4aGFfiMgoyLa3PG5qcZzFm/5RUOiEQa0o33QqwzT0YZh0QEntvfEmsfJP873kB7WGTqWKi6abzpy8+b7/MbV9Uf42LH2PsF4akEsd2YwdaZogNkKs3JKYnaWA6MBIeMM=
+X-SG-ID: u001.SdBcvi+Evd/bQef8eZF3BpTL9BgbK5wfSJMJGMsmprBkkoo3Jz4rspq/x5d35vN/ieAKs5mFXCaNWFDz2hv4emfu+qTtNPUYGpZsx2JN+e7mI4IVV8BEayu7udCLY1EUht4AWj24e5l6n1E4QUEST8yqvucnpm2YdLXa7rM3a2OKgU21cyfbeR2CmKqzmhRWKWnkb0Uu9QGmqHUh/4q2OaLBZjGsHfqE5JFjst4LUUFGcQo0UnKmgg0qUd0E10BjzjnfWm0zkRtnPLyiq+ubZVKUW/OaCEN2P4F28SZJvXWtxElj7B4OhP0vJlX0ij9q+wxdv31N9qtUSnOli5vPs3MHkSROBPA5Xk/jSnvGnvQno28djQiRMbjvAd3wbXCwnqiSJvfs01qAmuo76QGdxWgOro6T0FEgXAKsz0cqTQ4=
+To: write2andrew.fernandes@gmail.com
+X-Entity-ID: u001.FQMyRn9mrt10Db17oqXNnA==
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
+w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang=3D"en"><head><meta name=3D"x-apple-disable-message-reformatting"=
+/><meta content=3D"IE=3Dedge" http-equiv=3D"X-UA-Compatible"/><meta content=
+=3D"text/html; charset=3Dutf-8" http-equiv=3D"Content-Type"/><meta content=
+=3D"telephone=3Dno, date=3Dno, address=3Dno, email=3Dno, url=3Dno" name=3D"=
+format-detection"/><meta content=3D"width=3Ddevice-width; initial-scale=3D1=
+.0; maximum-scale=3D1.0; user-scalable=3Dno;" name=3D"viewport"/><title>Int=
+ernshala Trainings</title><!--[if gte mso 9]> <xml> <o:OfficeDocumentSettin=
+gs> <o:AllowPNG/> <o:PixelsPerInch>96</o:PixelsPerInch> </o:OfficeDocumentS=
+ettings></xml> <![endif]--><style type=3D"text/css">
+            #outlook a {
+                padding: 0;
+            }
+           =20
+            body {
+                width: 100% !important;
+                -webkit-text-size-adjust: 100%;
+                -ms-text-size-adjust: 100%;
+                margin: 0;
+                padding: 0;
+            }
+           =20
+            .ExternalClass {
+                width: 100%;
+            }
+           =20
+            .ExternalClass,
+            .ExternalClass p,
+            .ExternalClass span,
+            .ExternalClass font,
+            .ExternalClass td,
+            .ExternalClass div {
+                line-height: 100%;
+            }
+           =20
+            img {
+                outline: none;
+                text-decoration: none;
+                -ms-interpolation-mode: bicubic;
+            }
+           =20
+            a img {
+                border: none;
+            }
+           =20
+            table td {
+                border-collapse: collapse;
+            }
+           =20
+            table,
+            tr,
+            td {
+                box-sizing: border-box;
+                border-spacing: 0 !important;
+                mso-table-lspace: 0px !important;
+                mso-table-rspace: 0pt !important;
+                mso-line-height-rule: exactly !important;
+            }
+            /* THEME STYLE */
+
+        </style><meta content=3D"noindex, nofollow, noarchive" name=3D"robo=
+ts"/><meta content=3D"noindex, nofollow, noarchive" name=3D"googlebot"/></h=
+ead><body aria-disabled=3D"false" data-gr-ext-installed=3D"" data-new-gr-c-=
+s-check-loaded=3D"14.1104.0" data-new-gr-c-s-loaded=3D"14.1104.0" style=3D"=
+margin: 0px; padding: 0px; min-width: 100%; text-size-adjust: 100%; backgro=
+und-color: rgb(255, 255, 255); box-sizing: border-box;"><div style=3D"displ=
+ay:none; overflow:hidden; color:#FFFFFF; opacity:0;">FLAT 80% OFF!</div><ta=
+ble bgcolor=3D"#FFF" cellpadding=3D"0" cellspacing=3D"0" style=3D"margin: 0=
+ auto; padding: 0; width: 642px; min-width: 642px; border: 1px solid #DDD; =
+border-radius: 8px; background-color: #FFF; box-sizing: border-box; overflo=
+w: hidden;" width=3D"642px"><thead><tr><td align=3D"center" height=3D"118px=
+"><a href=3D"https://link.internshala.com/v1/emailclick?q=3DfsoY5RW90ytahz9=
+zTWMNuP1crOElMMmazhFYdQv2fTgxNd63aEmxS6T6-eJiBHk2LAnaDtCylBBhWAFpaXC2KDUY7X=
+GbPH_HIC2bSsqBnKZA6B4UK9O5JeVSCVYdHESqjCgImeUwhTA_K4ydGUcnVrSacKSEXjdjoCBpa=
+W1Xltm82OsQVfyq9CUdOxqZlYJKFQVmGnQc-oXSovbyI3N1PGheuTnfvPozqBmXysqyp93a3ooS=
+Q1wHJoRMATZZIOd2yF0oBQfH_9Zrg3h6V5A-ndBaquWC3qRaMkrLLT6oEfl8iBDAGONNcE9OB61=
+w3fNMwy2u6CLqz8YGvUPd6HcxSgNCr3eV.YRQQkGTpqVe-l4Jzhg9z0M8fmy8Pw77gIDYYuMyye=
+EgXj0.n21sZvex4-xiYuoSQ6rCNjIYFrHxmw6qCviJ0g97M6lLbtrGxf0MIMfrWzRHdFL7vJJWI=
+qThTxPUaFPoyITeC9pUkD5oBRL4tBqaU49oMCYorBVu76nXTEnUPg_46SqjvY3UwCbAKry4gf2X=
+MkW5uAA66zZAN3ua7Ct64V2k_zBmR2u6nUkQ1xySDy_X7oNYKqHHxvjs9xR7Tx601ASF0Z4oi_0=
+JoOtufpIA2RPOk3tnNRwJugd62Gk4jkAPj3fhOkcBIZ1q2.rg_K8zdMTTlYLo.qRwkDFXgitQdP=
+976jW0n0mGIBE_rRFNkCyXLioUi17ZXddEM96xATDF0Nw9mYi_gbSe1krJoFoiLgCH6Wu45OBjE=
+H2HUjT73_UVJsig4gwSpsTPiebuKARR0uKvHJZ4_v7q1ICkBCB7eZGOR94DwZksshqQ.px6hRE8=
+cPFjb2zltzISpPRr8MesSUI_jSt.Up7qgXHgX24edOlS4_Lwj2G_mfLtneqyeBsL6viA" style=
+=3D"margin: 0; padding: 0; display: block; text-decoration: none !important=
+; outline: none !important;" target=3D"_blank"><img alt=3D"Internshala Trai=
+nings" src=3D"https://trainings.internshala.com/uploads/emailers/IST-logo.p=
+ng" style=3D"margin: auto; padding: 0; display: block;" width=3D"262px"/><!=
+-- TAGLINE --></a></td></tr></thead><tbody bgcolor=3D"#FFFFFF" border=3D"0"=
+ cellpadding=3D"0" cellspacing=3D"0" width=3D"100%"><tr><td align=3D"center=
+"><a href=3D"https://link.internshala.com/v1/emailclick?q=3DpIVXdIoTRquSB0C=
+X.6A7C9ACgTTXP6YIedDem7kUr9UH4UokLdgT5n1H-0bE6cG0.FYfwjvSmuL8K99L4L5UhNT5JR=
+hf35YHB8tKo8viDiefz8AEpnn.jhYibaE9cbxhFO0X1dYsJH43aRBsiHIgLgJud_u_kiobfko5C=
+Q4BqHL.XZPfXyO3GLsYSooAZPSYSWegxC5Q-oXSovbyI3N1PGheuTnfvPozqBmXysqyp93a3ooS=
+Q1wHJoRMATZZIOd2yF0oBQfH_9Zrg3h6V5A-ndBaquWC3qRaMkrLLT6oEfl8iBDAGONNcE9OB61=
+w3fNMwy2u6CLqz8YGvUPd6HcxSgNCr3eV.YRQQkGTpqVe-HoUNmoDR_0RtHG58a4QVw6qA1XhHX=
+j9IfYavaTOs0OFW-RHlFB9HCtJf_U0X80DtH1vVJs0_ErsONdgXAowfNm5Ddd2sFniYb5074yu9=
+qRb0n5S5EjiV_2AIDCDbE07RmldowRDiUL8uRNp3jA3JBbLqLNfUOsa7juAes3nJwhGvCdhLJIZ=
+fYmInATlRlJqN1tMZ4_xtb7Q246rfME2YBnWWRtRPajvlp.vbA8H_L6USEO3Sf53uQ5FleXcGVV=
+K5RkLFCvBKBkDWnOOFN_FbaWpg9E1ilN.iIjmTysRIF4MsD4UqB6dDnDK_..44rZHbpCTgLjsEL=
+v1fXdGxEwM35qoji1_zGXAX4lwl7tANelJYVAKnU_QIlgDn8dTQ6KVyUiGUE1tDDD5k_Gyb3mrW=
+McDpnxIgmNOdkInCCMVDUUbgerAGjybhYPM_EUTrAfPcwCpukYaJI2ImwdIcD69wNTkJNKjBqZD=
+CUWLpz.cC8oG92Qb0EWwH5PToFHVuWQwHIHt2kIKaQj5FHaG29mSsvaeSmj0L3rq01pw" style=
+=3D"display: block;text-decoration: none;" target=3D"_blank"><table backgro=
+und=3D"https://internshala-uploads.internshala.com/common/image/9y4gzkt02j3=
+.png" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"margin:0 au=
+to;padding:0;width:100%;height:100%;background-repeat:no-repeat;background-=
+size:100% 100%;"><tbody><tr><td style=3D"height:100%;vertical-align:baselin=
+e;"><p style=3D"margin:0;padding:1005px 24px 0 24px;font-family:Arial;font-=
+size:20px;font-weight:700;line-height:16px;letter-spacing:0em;text-align:ce=
+nter;color:#000000;"><a href=3D"https://link.internshala.com/v1/emailclick?=
+q=3D7fRz0g4fPvJdzxfxpwqXz1CCN2Z9fJyxvPmZhkEuiUQ123elf5nsQQPZ-oo2KHJw377trl_=
+oPLNDJ.oNQA8VTwsNtyOTh1ZvitFyczwocYPvxX6ptE9xU.eyBeHgSDcoxui8aSYSIutAe1hOem=
+P6shv2A6WmDeQAN8UGjSFJ16929fONfzLEg5W9RumbpG9Ic7S1sYBs-oXSovbyI3N1PGheuTnfv=
+PozqBmXysqyp93a3ooSQ1wHJoRMATZZIOd2yF0oBQfH_9Zrg3h6V5A-ndBaquWC3qRaMkrLLT6o=
+Efl8iBDAGONNcE9OB61w3fNMwy2u6CLqz8YGvUPd6HcxSgNCr3eV.YRQQkGTpqVe-d9Wps6ziKa=
+yQntzJMIefx_sDUU3NBN3HeEVDt9erLkt9-JGQ0wmJdKGUoU2AfzTtQz__aoAkuE_p2EdvjCVdY=
+sQ3Zc7arLEKoM.lCpmc2bCwIs5qVq4Lv6E1a29S0snzsrTj4lz9Q1RSR1m7lo6EAjB8sDVjESx0=
+.zh10WAGL3h9qRB7WXle7ypgnO_0IuaXccl.TPjtG9rie0dlW8VWKqVubK7BAlWsS_TiKiA6cVg=
+EFYLbHdV5TOHhRNOXCGDKO18scC9R.PrvLy9A2dBq1lq1T9h5ukhrPAbzQnGOJeT4WOxkJ7RH9C=
+b6QLds9JOPeJsDCMBAoUQ4WrvCmi34keCvtIOb_CDTO0jMEuHsudLrdHeJMbfEvZdvcxGBEzQjr=
+haTWWrfM4aex1Ba.JawjjBg3hoXPGFPUTWrVGuRQvudQF20ua7IF6BpGhXw5Fkj6UFyR1ykStN5=
+7AHJKP9CE6Dpaf_8lGKoOfC9CdRSZhwfyNr34CGlTLcnlD0_O3B.fk5YXM.t276wPVGAp8sB1Ui=
+hvyeeUzglsVQB7kbNfvgg" style=3D"color:#000000; text-decoration:underline;" =
+target=3D"_blank">Web Development</a></p></td></tr><tr><td style=3D"height:=
+100%;vertical-align:baseline;"><p style=3D"margin:0;padding:16px 24px 0 24p=
+x;font-family:Arial;font-size:20px;font-weight:700;line-height:16px;letter-=
+spacing:0em;text-align:center;color:#000000;"><a href=3D"https://link.inter=
+nshala.com/v1/emailclick?q=3D9ug5zexhPSiNgvBOPRwO6zJF1LUqEsijMXgkYm1Oa_wV4_=
+e.6lOlsTHk-KD.fYRFX6sRhb1F8MGJ31MTg5AH3c2NM4PVN9zVnVNdXQrgY31RcPThdvAbLCscS=
+wxic36skevUvdFJ8tlGp1EcZ.3V8MMM0OW_jfIFTm7h1_y.40WmKl1qLZl9C4KNUvf8UChnikQG=
+ymGo-oXSovbyI3N1PGheuTnfvPozqBmXysqyp93a3ooSQ1wHJoRMATZZIOd2yF0oBQfH_9Zrg3h=
+6V5A-ndBaquWC3qRaMkrLLT6oEfl8iBDAGONNcE9OB61w3fNMwy2u6CLqz8YGvUPd6HcxSgNCr3=
+eV.YRQQkGTpqVe-OgWmDuMzNIAC8DSRFIHTJSjQNcOuGDoFB.d9ygytY5oC-D96kcpejaR1FqHQ=
+1ULknW4A7v4jRiNAB1xoprhXtl.P7k8N5O9rkUwl0Ps86l4oEwKDPNE8uLoCa0IRR5kU1YK9OE_=
+HkplmmW9PiIl9MmEkbwCYxo_jQDQDQdBtk290QCcPaC9Hvo3SDJIQRBjefmTtBIO81FaW2Oo451=
+WLu.IRpu6vNSGNW_A9VUcQenl9IH0L0EYicGFLp0Gk4IJM9Hy.fa.h9kqljb2PXB16XuiIcQs7p=
+o7QChMXkTMTgWTxy8E0AaH9wSnbQ_BLPt4UHa050rgFTvhb6_FaNVdNQarmgUzFot4VH_vJnoUb=
+DyCw9xl3ziIbBcYzJv_FjRZnTUIXnpLEXoGwlNqmjr_IOZRMheV93jEBPWFv5wZdJ2sXhBeaL4o=
+H0HfgBFz9frThF0I.78.uBe0s_YxwtNML15gnEgtUQ2n1_5ZaKzUeoAlEP.o84jRI_HhtL8.emh=
+r7Jmj2OVJtHCVbX3NaIY0v34FC6nTmHTPo" style=3D"color:#000000; text-decoration=
+:underline;" target=3D"_blank">Programming with Python</a></p></td></tr><tr=
+><td style=3D"height:100%;vertical-align:baseline;"><p style=3D"margin:0;pa=
+dding:16px 24px 0 24px;font-family:Arial;font-size:20px;font-weight:700;lin=
+e-height:16px;letter-spacing:0em;text-align:center;color:#000000;"><a href=
+=3D"https://link.internshala.com/v1/emailclick?q=3DlOMrSRV7rUK3FwMFpc1kEWTu=
+Th5Ox4qjitCrknAlKzjtqDI_AxToaAMO-4L_vluLSL5vJei5sUNWPpC96tBjLZBG3CMrR9TCMbX=
+eHJ8IY57DhlT5K7VULDrWU9eVCVm3UtojqEO_q09QqspgyNfiX8MMlsTpWsvO50j6fnX9ZJ7YQ_=
+oMSblnMJsL2BeOjXePCUWCXyvE-oXSovbyI3N1PGheuTnfvPozqBmXysqyp93a3ooSQ1wHJoRMA=
+TZZIOd2yF0oBQfH_9Zrg3h6V5A-ndBaquWC3qRaMkrLLT6oEfl8iBDAGONNcE9OB61w3fNMwy2u=
+6CLqz8YGvUPd6HcxSgNCr3eV.YRQQkGTpqVe-PyNYVJqEgW7hcnFrCy3wE4rU1YVjR7IMaJiEDs=
+Qv.6g3-qZQXp4LccSLBkNWayrPQqBwk9MZpsgQ9SdCCwTQX6tDA0qZyO0weQibyCf9nN81qcI6E=
+I6CSVuFVUnWccx73Q7mMQzLD21eVI4R5WqPsALBVL9BVHtlzHl7lcJTKaPl_62.eTpgetvSdx4I=
+Wt99Xzg81M_yt08qL.58ZS1U5KkoCiR5R0KISBGmAM.FIy_YSuqFCDVPMkVlp6h4IT9x9lVyhru=
+SlTRZP5FyijIIa67MDKwgGoKTWrI8YD0cCNR9BjDABftvtSdyi90fBHdR32rlLh7saXnWhzVNgG=
+6FFeH8F0eQ1nVE98VT5xtYn61jotuin2w7yMQeDirsToVng.sZQ_8VIs54opT33x5Mh8dVX_COG=
+5J6DIaN7EkrABrgESqpVGjWFJgu0jejrdPTh2KUvqgeubA9hiGen12Rj3hy3Bn81k3JGub7pbCN=
+n3mQEtG8jFErB6FmRCzbL1b0C9gEfVtK0uHY_tvMSlvEIPt1ApG92MK4eyVYoMYAGg.kC" styl=
+e=3D"color:#000000; text-decoration:underline;" target=3D"_blank">Machine L=
+earning</a></p></td></tr><tr><td height=3D"540px"></td></tr></tbody></table=
+></a></td></tr></tbody><tfoot><tr><td align=3D"center" height=3D"118px" sty=
+le=3D"vertical-align: top;"><div style=3D"margin: auto; padding: 0; width: =
+608px; min-width: 608px; border-top: 1px solid #DDD;"></div><p style=3D"mar=
+gin: 0; padding: 16px 16px 0 16px; font-family: Arial; font-size: 14px; fon=
+t-weight: 400; line-height: 22px; letter-spacing: 0em; text-align: center; =
+color: #666;">Internshala (Scholiverse Educare Pvt. Ltd.)</p><p style=3D"ma=
+rgin: 0; padding: 0 16px 0 16px; font-family: Arial; font-size: 14px; font-=
+weight: 400; line-height: 22px; letter-spacing: 0em; text-align: center; co=
+lor: #666;">901A and 901B, Iris Tech Park, Sector - 48, Sohna Road, Gurugra=
+m</p><p style=3D"margin: 0; padding: 16px; font-family: Arial; font-size: 1=
+4px; font-weight: 400; line-height: 22px; letter-spacing: 0em; text-align: =
+center; color: #666;">Don't want learning opportunities delivered to your i=
+nbox? <a href=3D"[UNSUBSCRIBEURL]" style=3D"color: #008BDC; text-decoration=
+: none !important;" target=3D"_blank">Unsubscribe</a></p></td></tr></tfoot>=
+</table><img src=3D"https://u49946244.ct.sendgrid.net/wf/open?upn=3Du001.Cb=
+OCoOHzY8f1sOgmTs22QcFHC0g88OVnrro8bJoHSbZ3jihTFIknMWfPIiRfVq9M-2B7-2F60A4y0=
+b2Y9ua33PiHXwSaIvcHrh5Bdlpv6Pf6lKk10riU5RflyaMqBe6jmG7fDhY7rFyA465qtJE-2B-2=
+FB1kT6rZERVHEznkN9PUqVtGV8MRvcupHoGHaxXFnYd7mz7Ff2w-2F6o6OjwwtRF9JEbQgbdyX0=
+Ax1aaMSGdTYdN8TdLsEX-2FeUXCmnb2sgmAI9Ni05eq8Igapn1q3i8x-2FRWLcQv-2Bc8XUzXxx=
+-2BfFsaWlOoBf56I1gioNdL5X-2FKklZ5djtWEl2X8mJ-2BZLyxKT9tY-2FqPzv-2B2qhpMGjPu=
+qTmmlmBZqDi22unh4MDoo4jppzoFrQ-2BnirAnt-2BlI-2FDRO0yUFELOvVqWt4JiLYaveUff-2=
+FU146t7Bn4Ea6HejHihDPzO-2Fo4a-2FM-2FaD2eS2ZnQwKX3F6Pr2qP6BQCPanM-2BjycWnER3=
+gXrrfrnK2t8m8Rez84dtS547nxNwYgZHnmCw1HBB893cllY-2FzwBMBRPLWuc5cbvqlPZJXsgCM=
+-2Fz6l67rdEM4qsJ5slaIFQ2UDG7tM-2BrIyC484Qrol-2Bo7on75BHOrdtsT6toaIc-3D" alt=
+=3D"" width=3D"1" height=3D"1" border=3D"0" style=3D"height:1px !important;=
+width:1px !important;border-width:0 !important;margin-top:0 !important;marg=
+in-bottom:0 !important;margin-right:0 !important;margin-left:0 !important;p=
+adding-top:0 !important;padding-bottom:0 !important;padding-right:0 !import=
+ant;padding-left:0 !important;"/></body><br><p id=3D"moe_internal_email_uns=
+ubscribe">If you'd like to unsubscribe and stop receiving these emails <a h=
+ref=3D"https://link.internshala.com/v1/emailunsubscribe?q=3DcMcb9P3zjKEEEiF=
+1k116cFQ2smSFwtiD3gbWNK81gQesYkIB1nXPOEUv-FdLqMpoZUwszz97e4N5tyLNPnzubrbjjY=
+gxCAUwuUwQ.G9iw1bS5NJSbCKoiLrWtCAbZYHXuUea3SacuPJCx5eriFXS6x4t6TsJwl5Wrt6jr=
+a_tVuh_a3eB.4GMxg0PV5O.y5Y5.uR7d_R8-oXSovbyI3N1PGheuTnfvPozqBmXysqyp93a3ooS=
+Q1wHJoRMATZZIOd2yF0oBQfH_9Zrg3h6V5A-ndBaquWC3qRaMkrLLT6oEfl8iBDAGONNcE9OB61=
+w3fNMwy2u6CLqz8YGvUPd6HcxSgNCr3eV.YRQQkGTpqVe-eEycOOEnaiOQUm_7zrTi9zadwmQtA=
+WF_04mdVYUKeiebGDDyCbqJxKVIFVRr4zGII5JKjvM0X2Ab3HuZUMDWz4mjtKgQFkZ8jTwih9H_=
+Kr0t0o7TQZuCGw">click here</a></p></html><img src=3D"https://link.internsha=
+la.com/v1/emailopen?q=3DjnATz6.H1wpL8ZgAzUr4_YuJdfTJjGpGmpHeBx8DigZo5s26oqV=
+wTuSl-.B2j4xhleNNXPJvsfj3jVMzI5_3qb9u6GpxlbkKFZVcnOb7NZwBHdVa2t3HGDrV8QEcGb=
+5BZpo99r28jU1c9go6TSQ7vmfnB.mci8rZabr0LVvqyNwLpgyzLURez6c8yPVSQuPbUvbTwxEY-=
+eMnPiIAmsCGqXe8hf0p6Lc0nQUkd3Rlgv86AvkGYxKDPsJCyUdVACQwhkV3zlb4Vrl_NXXXWyw-=
+hjK7aU2uToJP4JR_KDSOE43mzEXaKwtY6x_pj6_6cQdOA6kOCokIqhsoShuNX97bk2oQP80l7PD=
+c6QxNKfk7" alt=3D"" style=3D"display:none;width:1px;height:1px;" height=3D"=
+1" width=3D"1">

@@ -1,0 +1,10 @@
+
+From: alice@example.com
+Subject: Request for Quote
+
+Hi Team,
+
+We urgently need a quote for 100 units of item X. Please send it by EOD.
+
+Regards,
+Alice
